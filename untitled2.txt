@@ -1,0 +1,94 @@
+ans1-)
+class Vehicle:
+    def __init__(self, name_of_vehicle, max_speed, average_of_vehicle):
+        self.name_of_vehicle = name_of_vehicle
+        self.max_speed = max_speed
+        self.average_of_vehicle = average_of_vehicle
+
+    def details(self):
+        return self.name_of_vehicle, self.max_speed, self.average_of_vehicle
+
+# Example usage
+vehicle1 = Vehicle("Car", 200, 15)
+vehicle1.details()
+
+ans2-)
+class Vehicle:
+    def __init__(self, name_of_vehicle, max_speed, average_of_vehicle):
+        self.name_of_vehicle = name_of_vehicle
+        self.max_speed = max_speed
+        self.average_of_vehicle = average_of_vehicle
+        
+        def details(self):
+            return self.name_of_vehicle, self.max_speed , self.average_of_vehicle
+
+class car(Vehicle):
+    def seating_capacity(self,capacity):
+        return f"{self.name_of_vehicle} has a seating capacity of {capacity}."
+    
+c1=car("honda",200,20)
+c1.seating_capacity(5)
+
+ans 3)
+Multiple Inheritance 
+When a class is derived from more than one base class it is called multiple Inheritance. The derived class inherits all the features of the base case.
+# Python Program to depict multiple inheritance
+# when method is overridden in both classes
+
+class Class1:
+	def m(self):
+		print("In Class1") 
+	
+class Class2(Class1):
+	def m(self):
+		print("In Class2")
+
+class Class3(Class1):
+	def m(self):
+		print("In Class3") 
+		
+class Class4(Class2, Class3):
+	pass
+	
+obj = Class4()
+obj.m()
+
+
+ans4)
+
+In Python, getters and setters are not the same as those in other object-oriented programming languages. Basically, the main purpose of using getters and setters in object-oriented programs is to ensure data encapsulation. Private variables in python are not actually hidden fields like in other object oriented languages. Getters and Setters in python are often used when:
+
+    We use getters & setters to add validation logic around getting and setting a value.
+    To avoid direct access of a class field i.e. private variables cannot be accessed directly or modified by external user. 
+
+# Python program showing a use 
+# of get() and set() method in 
+# normal function 
+
+class Geek: 
+	def __init__(self, age = 0): 
+		self._age = age 
+	
+	# getter method 
+	def get_age(self): 
+		return self._age 
+	
+	# setter method 
+	def set_age(self, x): 
+		self._age = x 
+
+raj = Geek() 
+
+# setting the age using setter 
+raj.set_age(21) 
+
+# retrieving age using getter 
+print(raj.get_age()) 
+
+print(raj._age) 
+
+ans-5)
+
+
+
+        
